@@ -6,12 +6,18 @@ public class Seat implements InterfaceSeat{
     Boolean isBooked;
 
     @Override
-    public void getSeatNum() {
-
+    public InterfaceSeatID getSeatNum() {
+        return SeatNum;
     }
 
     @Override
     public Boolean getStatus() {
-        return null;
+        return isBooked;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder().append("Numero de siege").append(SeatNum).append("-").append("est pris").append(isBooked).toString();
+    }
+
 }

@@ -2,6 +2,6 @@ package Seat;
 
 public interface InterfaceSeat {
 
-    void getSeatNum();
+    InterfaceSeatID getSeatNum();
     Boolean getStatus();
 }
