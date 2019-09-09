@@ -5,6 +5,8 @@ import Airline.InterfaceAirline;
 import java.util.Calendar;
 
 public interface InterfaceFlight {
+
+
     InterfaceAirline getAirline();
     String getID();
     void getOrig();

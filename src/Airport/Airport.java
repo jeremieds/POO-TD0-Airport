@@ -1,6 +1,8 @@
 package Airport;
 
-public class Airport implements InterfaceAirport{
+import java.util.Objects;
+
+public final class Airport implements InterfaceAirport{
 
     private String code;
 
@@ -8,4 +10,5 @@ public class Airport implements InterfaceAirport{
     public String getName() {
         return code;
     }
+
 }

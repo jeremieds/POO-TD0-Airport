@@ -2,7 +2,7 @@ package Airline;
 
 import Flight.InterfaceFlight;
 
-public class Airline implements InterfaceAirline{
+public final class Airline implements InterfaceAirline{
 
     private String Nom;
 
