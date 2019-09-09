@@ -2,5 +2,5 @@ package Airport;
 
 public interface InterfaceAirport {
 
-    String getName();
+    String getCode();
 }

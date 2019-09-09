@@ -7,7 +7,7 @@ public final class Airport implements InterfaceAirport{
     private String code;
 
     @Override
-    public String getName() {
+    public String getCode() {
         return code;
     }
 
