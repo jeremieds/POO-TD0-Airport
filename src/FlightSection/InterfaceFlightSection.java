@@ -5,6 +5,6 @@ import Seat.InterfaceSeat;
 public interface InterfaceFlightSection {
 
     InterfaceSeat getSeatClass();
-    boolean hasAvailableSeats();
-    boolean bookSeat();
+    Boolean hasAvailableSeats();
+    Boolean bookSeat();
 }
