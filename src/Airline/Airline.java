@@ -9,17 +9,20 @@ import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
-public final class Airline implements InterfaceAirline{
+public final class Airline implements InterfaceAirline {
 
     private String Nom;
-    private Set<InterfaceFlight> setFlight;
+    private final Set<InterfaceFlight> setFlight;
+
     public Airline() {
         this.setFlight = new HashSet<>();
     }
 
     public Airline(String n) throws Exception {
-        if(n.length()==5){Nom=n;}
-        else throw new Exception(
+        this();
+        if (n.length() == 5) {
+            Nom = n;
+        } else throw new Exception(
                 "Airline 5 caractere uniquement"
         );
 
@@ -33,7 +36,7 @@ public final class Airline implements InterfaceAirline{
 
     @Override
     public InterfaceFlight createFlight(InterfaceAirport orig, InterfaceAirport dest, Calendar date, String id) {
-        setFlight.add(new Flight(this,orig,dest,date,id));
+        setFlight.add(new Flight(this, orig, dest, date, id));
         return null;
     }
 

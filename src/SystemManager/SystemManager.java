@@ -13,8 +13,8 @@ import java.util.Set;
 
 public final class SystemManager implements InterfaceSystemManager {
     //private Set<InterfaceAirline> setAirline;
-    private Set<InterfaceAirport> setAirport;
-    private Set<InterfaceAirline> setAirline;
+    private final Set<InterfaceAirport> setAirport;
+    private final Set<InterfaceAirline> setAirline;
 
     public SystemManager() {
         this.setAirport = new HashSet<>();
@@ -44,7 +44,14 @@ public final class SystemManager implements InterfaceSystemManager {
 
     @Override
     public void createSection(String air, String flID, int rows, int cols, EnumSeatClass s) {
+        /*
+        for (InterfaceAirline i : setAirline) {
+            if (i.getNom() == flID) {
+                i.createSection(orig, dest, date, id);
+            }
+        }
 
+         */
 
 
     }
