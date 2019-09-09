@@ -1,10 +1,11 @@
 package FlightSection;
 
+import Seat.EnumSeatClass;
 import Seat.InterfaceSeat;
 
 public interface InterfaceFlightSection {
 
-    InterfaceSeat getSeatClass();
+    EnumSeatClass getSeatClass();
     Boolean hasAvailableSeats();
     Boolean bookSeat();
 }
