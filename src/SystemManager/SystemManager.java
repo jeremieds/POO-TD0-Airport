@@ -1,6 +1,6 @@
 package SystemManager;
 
-public class SystemManager implements InterfaceSystemManager {
+public final class SystemManager implements InterfaceSystemManager {
 
 
     @Override

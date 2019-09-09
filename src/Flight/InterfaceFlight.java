@@ -1,6 +1,7 @@
 package Flight;
 
 import Airline.InterfaceAirline;
+import FlightSection.InterfaceFlightSection;
 
 import java.util.Calendar;
 
@@ -15,7 +16,7 @@ public interface InterfaceFlight {
     Boolean hasSection();
     Boolean hasSeats();
     Boolean createSection();
-    InterfaceFlight findSection();
+    InterfaceFlightSection findSection();
     void bookSeat();
 
 }
