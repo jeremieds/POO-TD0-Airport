@@ -1,6 +1,7 @@
 package Flight;
 
 import Airline.InterfaceAirline;
+import Airport.InterfaceAirport;
 import FlightSection.InterfaceFlightSection;
 
 import java.util.Calendar;
@@ -18,14 +19,15 @@ public class Flight implements InterfaceFlight {
     }
 
     @Override
-    public void getOrig() {
-
+    public InterfaceAirport getOrig() {
+        return null;
     }
 
     @Override
-    public void getDest() {
-
+    public InterfaceAirport getDest() {
+        return null;
     }
+
 
     @Override
     public Calendar getDate() {
